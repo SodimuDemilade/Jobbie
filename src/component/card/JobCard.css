@@ -1,0 +1,37 @@
+.jobCard {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    display: flex;
+    cursor: pointer;
+}
+
+.jobCardBody {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+}
+
+.jobCardBody h5 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--primary);
+}
+
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    width: max-content;
+}
+
+.badge-dark {
+    color: #fff;
+    background-color: #343a40;
+}

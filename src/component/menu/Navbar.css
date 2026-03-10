@@ -1,0 +1,158 @@
+/*.bg-primary {*/
+/*    background-color: #E05433 !important;*/
+/*}*/
+
+/* Navbar.css */
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E05433;
+    padding: 0.5rem 3rem;
+    color: #fff;
+    position: relative;
+}
+
+/* Brand */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+/* Toggler button */
+.navbar-toggler {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+/* Navbar menu */
+.navbar-collapse {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Collapse toggle for mobile */
+.collapse {
+    display: flex;
+}
+
+.collapse.show {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nav items */
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+/* Links */
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 0.5rem 0;
+    display: none;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.dropdown-menu.show {
+    display: flex;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background-color: #ccc;
+    margin: 0.5rem 0;
+}
+
+/* Hide divider for empty */
+.d-none {
+    display: none !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: flex;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-item + .nav-item {
+        margin-top: 0.5rem;
+    }
+}

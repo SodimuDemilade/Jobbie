@@ -1,0 +1,49 @@
+.jobDetailContainer {
+    display: flex;
+    /*justify-content: center;*/
+    /*width: 70%;*/
+    padding: 50px 100px;
+    gap: 30px;
+    height: 88vh;
+    overflow: auto;
+}
+
+.jobDetailContainer h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.jobDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.jobDetails h4 {
+    margin: 0;
+}
+
+.jobButtonGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.jobDetailImage {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.applyButton {
+    background: #343a40;
+    border: 1px solid #343a40;
+    color: #fff;
+}
+
+.favoriteButton {
+    background: #6c757d;
+    border: 1px solid #6c757d;
+    color: #fff;
+}
